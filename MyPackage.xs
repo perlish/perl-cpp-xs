@@ -22,3 +22,4 @@ math::DESTROY()
 
 int
 math::get_max(int a,int b)
+
