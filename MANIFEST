@@ -3,6 +3,10 @@ Makefile.PL
 MANIFEST
 MyPackage.xs
 ppport.h
+class.h
 README
 t/MyPackage.t
+test.pl
 lib/MyPackage.pm
+typemap
+perlobject.map

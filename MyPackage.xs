@@ -1,35 +1,24 @@
 #ifdef __cplusplus
-
-#include <iostream>
-using namespace std;
-
 extern "C" {
 #endif
+
 #include "EXTERN.h"
 #include "perl.h"
 #include "XSUB.h"
+
 #ifdef __cplusplus
 }
 #endif
 
-
-
-class MyClass {
-public:
-	MyClass(char * my_favorite_argument) {
-		cout << "I'm constructin' my bad self ... " << my_favorite_argument << "\n";
-	}
-	~MyClass() { cout << "Destruction is a way of life for me.\n"; }
-	int wow() { return 12 / 3; }	
-};
+#include "class.h"
 
 MODULE = MyPackage          PACKAGE = MyPackage
  
-MyClass *
-MyClass::new(char * my_favorite_argument)
+math *
+math::new()
  
 void
-MyClass::DESTROY()
+math::DESTROY()
 
 int
-MyClass::wow()
+math::get_max(int a,int b)

@@ -2,5 +2,5 @@
 
 use MyPackage;
 
-my $x = new MyPackage("Hi.");
-print $x->wow, " is the magic number.\n";
+my $x = new MyPackage();
+print $x->get_max(12,14)," is greater\n";

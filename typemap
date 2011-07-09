@@ -1,2 +1,2 @@
 TYPEMAP
-MyClass *         O_OBJECT
+math *         O_OBJECT
